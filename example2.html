@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+    <style>
+        .cards{
+            background-color: rgba(126, 194, 223, 0.5);
+            text-align: center;
+            height: 200px;
+            width: auto;
+        }
+        .cards__para1,.cards__para2,.cards__para3{
+            background-color: rgba(182, 82, 147, 0.9);
+        }
+        .cards__para1--red{
+            color:red
+        }
+        .cards__para2--green{
+            color:green
+        }
+        .cards__para3--blue{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="cards__para1">
+            <!-- Named the class name of paragraph based on BEM approach (cards (Block) , cards__para1(Element) , crads__para1--red(Modifier))
+            Block ==> which holds the element to be modified 
+            Element ==> what element we are targetting
+            Modifier ==> What effect you are producing on it  -->
+            <p class="cards__para1--red">This is sample Para text 1 with red color</p>
+        </div>
+        <!-- For the above p element i wanted to make it as red text color , so i have given cards__para1--red as class name -->
+        <div class="cards__para2">
+            <p class="cards__para2--green">This is sample Para text 1 with green color</p>
+        </div>
+        <div class="cards__para3">
+            <p class="cards__para3--blue">This is sample Para text 1 with blue color</p>
+        </div>
+    </div>
+    <!-- Basically in the html file there is an outer div element which holds all div elements , so for now i have named outer div element as cards
+    inside outer div element there are multiple div elements which container different p elements so i have named them as cards which holds paragraphs (cards__para)
+    For each p element i am doing an effect so based on the effect i have given the class name -->
+</body>
+</html>
